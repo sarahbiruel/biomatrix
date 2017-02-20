@@ -1,0 +1,56 @@
+footer {
+   color: white;
+   ul { margin: 0; padding:0; list-style: none;}
+   a { color: white; }
+
+   .footer{
+     background:#006E31;
+    padding: 60px 0;
+
+    h3 {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+
+    div.line {
+      border-right: 1px solid white;
+      min-height: 200px;
+      &:last-child { border: none; }
+    }
+
+    .space {
+      padding: 0 20px;
+    }
+    .social li {
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    p {font-family: "Century Gothic", sans-serif;}
+
+    .logo {
+      padding-top: 22%;
+    }
+
+    ul.menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: block;
+        width: 128px;
+        font-size: 12px;
+        font-family: 'Century Gothic', sans-serif;
+      }
+    }
+
+   }
+
+   .copyright {
+     padding: 20px 0;
+     background-color:#022C26;
+     color: white;
+    p { margin: 0;}
+    .mamweb-logo { float: right; padding-right: 5%;}
+   }
+}

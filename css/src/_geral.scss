@@ -1,0 +1,68 @@
+a { cursor: pointer; transition: all ease 0.2s; }
+body {font-family: "Raleway", sans-serif !important;}
+label { display: block; }
+.clearfix:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+h2,h3,h4,h5 { font-family: "Raleway", sans-serif !important; }
+p { font-family: "Century Gothic", sans-serif; }
+h3 {color: #002C26; }
+h1 { font-size: 36px !important;}
+h3.title-white {color: white !important;}
+
+.container2 {
+  max-width: 1000px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+slide {
+  display: block;
+  min-height: 180px;
+  position: static;
+  z-index: -1;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  img { width: 100%; height: auto;}
+  h1 { text-transform: uppercase; margin: 0px;}
+}
+
+.thumb {
+  img { width: 100%; height: auto;}
+  .image-zoom { width: 100%; overflow: hidden; display: block; }
+  .image {
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    &:hover {
+
+      transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2); /* IE 9 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+         filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */
+    }
+  }
+}
+
+.divisor {
+  height: 50px;
+}
+
+.gmwd_store_locator_container { display: none;}

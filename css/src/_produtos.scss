@@ -1,0 +1,129 @@
+#products {
+  background-color: #006E31;
+  .filter {
+    box-shadow: inset -17px 0px 2px -18px rgba(255,255,255,1);
+    border-right: 1px solid #004020 !important;
+    padding: 2% 4%;
+
+    @media all and (min-width: 1200px) {
+      padding: 2% 3% 2% 5%;
+    }
+
+    p {
+      color: white;
+      font-weight: bold;
+      font-size: 17px;
+      font-family: "Raleway", sans-serif;
+    }
+    label {
+      width: 100%;
+      text-align: center;
+      //display: none;
+      @media all and (min-width: 768px) {
+        width: auto;
+        text-align: left;
+      }
+      @media all and (min-width: 992px) {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+    select {
+      width: 100%;
+      background-color: #2A8835;
+      border: none;
+      color: white;
+      text-align: center;
+
+      @media all and (min-width: 992px) {
+        width: 50%;
+      }
+
+      @media all and (min-width: 1200px) {
+        width: 60%;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        background: url("img/icone-seta.png") no-repeat;
+        width: 13px;
+        height: 8px;
+        float: left;
+        margin: 0 6px 0 0;
+      }
+
+    }
+    option {
+      padding: 5px;
+      border-bottom: 1px solid white;
+    }
+  }
+  .filter.last {
+    display: none;
+     border-right: 0px !important;
+     box-shadow: none !important;
+     @media all and (min-width: 992px) {
+       display: block;
+     }
+    }
+}
+
+.box-product {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.15);
+  padding: 40px 30px;
+  margin-bottom: 20px;
+  transition: all ease 0.5s;
+
+  .img-product {
+    border-bottom: 1px solid #2A8835;
+    padding: 20px 0 10px;
+    margin-bottom: 15px;
+  }
+
+  .table-product {
+    ul { margin: 0; padding: 0; }
+    li { list-style: none; border-bottom: 1px solid #DDDDDD; padding: 10px 0; }
+  }
+
+  &:hover {
+    background-color: #2A8835;
+    box-shadow: none;
+    border: none;
+    color: white;
+    button.btnGreen {
+      background-color: white;
+      color: #2A8835;
+    }
+  }
+
+}
+
+  button.btnGreen {
+    background-color: #2A8835;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size:12px;
+    font-weight: bold;
+    letter-spacing:1px;
+    margin: 30px 0px 0px;
+  }
+
+  .thumbnail {
+    border: 0px;
+   iframe, img {
+      -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+      -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+      box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+      height: 420px;
+      width: 100%;
+      margin: 30px 0 0;
+
+    @media all and(max-width: 479px) {
+      height: auto !important;
+    }
+  }
+  }

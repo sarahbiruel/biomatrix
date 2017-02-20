@@ -1,0 +1,137 @@
+
+
+header {
+  position: relative;
+  z-index: 6;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+
+  .logo {
+    padding: 10px;
+    img { width: 100%; max-width: 230px; height: auto;}
+  }
+
+  nav.menu {
+    display: none;
+    @media all and (min-width: 992px) {
+      display: block;
+    }
+    ul { margin: 0; padding: 0; /*position: relative;*/}
+
+    li{
+      list-style: none;
+      &:hover > .sub-menu, &:hover > .sub-menu2 { display: block; left: 0;}
+      &:last-child {border-right: none !important;}
+      &:not(:last-child) span { border-right: 1px solid #ddd;}
+
+      span {padding: 10px 16px 10px 12px; color: #535353; }
+    }
+
+    /*ul:not(.submenu) { min-height: 85px;}*/
+    li, a {
+      float:left;
+      min-height: 85px;
+    }
+    a {
+      font-family: "Century Gothic", Raleway, sans-serif;
+      width: 100%;
+      padding: 25px 0 0 10px;
+
+      &:hover { border-bottom: 4px solid green; background-color: #EEE; text-decoration: none;}
+    }
+    .sub-menu, .sub-menu2 {
+      display: none;
+      position: absolute;
+      box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+      width: 100%;
+      top: 85px;
+      max-height: 85px;
+      li {
+        display: inline-block;
+        float: none;
+      }
+    }
+    .sub-menu{
+      background-color: #eee;
+      a:hover { background-color: #ddd;}
+    }
+    .sub-menu2{
+      background-color: #ccc;
+      a:hover { background-color: #A5A5A5;}
+    }
+  }
+
+  .bar {
+    display: none;
+    @media all and (min-width: 992px) {
+      display: block;
+    }
+    padding: 20px 0;
+    #myBtn.glyphicon-search, .selectpicker { border: 2px solid #ccc; border-radius: 5px; }
+    #myBtn.glyphicon-search { padding: 6px; color: #ccc; z-index: 0;}
+    .selectpicker { padding: 5px; }
+    position: absolute;
+
+    #myBtn, #myBtn2 {
+      float: right;
+      height: 30px;
+      position: relative;
+      overflow: hidden;
+      background-color: white;
+
+      a {
+        text-decoration: none;
+        font-family: 'Century Gothic', sans-serif;
+        color: #ccc;
+        font-variant: small-caps;
+        font-weight: bold;
+        transition: ease 1s;
+        -webkit-transition: 2s;
+
+        &:hover { color: green;}
+      }
+
+    }
+
+    #myBtn {
+      -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+      transition: width 1s;
+      width: 30px;
+
+
+      &:hover {
+        width: 130px;
+
+        .search-field{
+          display: block;
+        }
+      }
+
+      .search-field {
+        display: none;
+        width: 90px;
+        margin-top: -20px;
+        padding: 5px 2px;
+        font-family: "Century Gothic", sans-serif;
+        border: none;
+        /*border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color:  white;*/
+      }
+    }
+
+    #myBtn2 {
+      -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+      transition: height 1s;
+
+      &:hover {
+        height: 95px;
+      }
+
+      myDropdown { overflow: hidden;}
+    }
+
+    .language { padding-top: 1px;}
+
+  }
+}
